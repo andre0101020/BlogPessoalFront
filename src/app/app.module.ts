@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { EntrarComponent } from './entrar/entrar.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { TemaComponent } from './tema/tema.component';
 
 
 
@@ -19,7 +20,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MenuComponent,
     RodapeComponent,
     CadastrarComponent,
-    EntrarComponent
+    EntrarComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
