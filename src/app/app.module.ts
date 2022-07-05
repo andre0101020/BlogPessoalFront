@@ -9,6 +9,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { EntrarComponent } from './entrar/entrar.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -27,7 +28,10 @@ import { EntrarComponent } from './entrar/entrar.component';
     FormsModule
     
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass:HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
